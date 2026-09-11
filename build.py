@@ -57,38 +57,73 @@ def git_subdir(repo, ref, rel_path):
     }
 
 
-def relative_to_git_subdir(entry, cfg):
-    """字符串型相对路径 -> git-subdir 对象。"""
-    src = entry.get("source")
-    if not isinstance(src, str) or not src.startswith("./"):
-        return entry
-    entry["source"] = git_subdir(
-        cfg["relative_source_repo"], cfg.get("relative_source_ref", "main"), src
-    )
-    return entry
+def normalize_source(src):
+    """把上游各种来源表示统一成一个带标签的元组，消除到处散落的 isinstance 分发。
 
-
-def codex_local_to_git_subdir(entry, cfg):
-    src = entry.get("source")
-    repo = cfg["relative_source_repo"]
-    ref = cfg.get("relative_source_ref", "main")
-    if isinstance(src, str) and src.startswith("./"):
-        entry["source"] = git_subdir(repo, ref, src)
-    elif isinstance(src, dict):
+    返回 (kind, value)：
+      ("relative", rel_path)   相对路径，指向上游仓库里的插件目录
+      ("url_root", url)        指向某个外部仓库根目录
+      ("git_subdir", dict)     已经是 git-subdir，原样保留
+      None                     认不出的形状，原样透传
+    """
+    if isinstance(src, str):
+        if src.startswith("./"):
+            return ("relative", strip_dot_slash(src))
+        return None
+    if isinstance(src, dict):
         kind = src.get("source")
         if kind == "local":
-            entry["source"] = git_subdir(repo, ref, src.get("path", ""))
-        elif kind == "url":
-            # 指向外部仓库根目录
-            entry["source"] = {"source": "git", "url": src["url"], "ref": ref}
-        # git-subdir 原样保留
-    return entry
+            return ("relative", strip_dot_slash(src.get("path", "")))
+        if kind == "url":
+            return ("url_root", src.get("url"))
+        if kind == "git-subdir":
+            return ("git_subdir", dict(src))
+    return None
 
 
-TRANSFORMS = {
-    "relative-to-git-subdir": relative_to_git_subdir,
-    "codex-local-to-git-subdir": codex_local_to_git_subdir,
-}
+class RelativeSource:
+    """把市场配置里结伴出现的 repo/ref 收拢成一个对象。"""
+
+    def __init__(self, cfg):
+        self.repo = cfg["relative_source_repo"]
+        self.ref = cfg.get("relative_source_ref", "main")
+
+    def subdir(self, rel_path):
+        return git_subdir(self.repo, self.ref, rel_path)
+
+    def git_root(self, url):
+        return {"source": "git", "url": url, "ref": self.ref}
+
+
+def make_transform(cfg):
+    """按市场配置返回 entry -> entry 的改写函数。
+
+    两个市场共用同一套"解析来源形状"的逻辑，差别只在策略：
+      - claude 两个市场：只有相对路径需要改写
+      - codex：相对路径改写，外加把指向外部仓库根目录的 url 源转成 git 源
+    """
+    src = RelativeSource(cfg)
+
+    if cfg["source_transform"] == "codex-local-to-git-subdir":
+        def transform(entry):
+            norm = normalize_source(entry.get("source"))
+            if norm is None:
+                return entry
+            kind, value = norm
+            if kind == "relative":
+                entry["source"] = src.subdir(value)
+            elif kind == "url_root":
+                entry["source"] = src.git_root(value)
+            # git_subdir 原样保留
+            return entry
+        return transform
+
+    def transform(entry):
+        norm = normalize_source(entry.get("source"))
+        if norm is not None and norm[0] == "relative":
+            entry["source"] = src.subdir(norm[1])
+        return entry
+    return transform
 
 
 def build_one(market, cfg, translations, icons):
@@ -97,7 +132,7 @@ def build_one(market, cfg, translations, icons):
     if not isinstance(plugins, list):
         raise ValueError(f"{market}: 上游清单里没有 plugins 数组")
 
-    transform = TRANSFORMS[cfg["source_transform"]]
+    transform = make_transform(cfg)
     seen, dup, out = set(), [], []
     zh_hit = icon_hit = 0
 
@@ -112,7 +147,7 @@ def build_one(market, cfg, translations, icons):
             continue
         seen.add(name)
 
-        entry = transform(dict(raw), cfg)
+        entry = transform(dict(raw))
 
         zh = translations.get(name)
         if zh:
