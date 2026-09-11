@@ -1,0 +1,15 @@
+{
+  "agent-sdk-dev": "Claude Agent SDK 开发工具包：用 SDK 构建自己的智能体应用",
+  "claude-opus-4-5-migration": "把代码和提示词从 Sonnet 4.x / Opus 4.1 迁移到 Opus 4.5",
+  "code-review": "自动化 PR 代码评审：多个专职子代理并行审查，按置信度打分过滤误报",
+  "commit-commands": "Git 提交工作流命令：提交、推送、创建 PR 一句话搞定",
+  "explanatory-output-style": "输出风格：解释实现选择与代码库模式，边用边学",
+  "feature-dev": "完整功能开发流程：代码库探索、架构设计、质量评审各有专职子代理",
+  "frontend-design": "前端界面设计：产出有设计感、不像 AI 套模板的生产级页面",
+  "hookify": "用 Markdown 写规则，自动生成 hooks 来阻止不想要的行为",
+  "learning-output-style": "学习模式：在关键决策点让你动手写代码，边做边学",
+  "plugin-dev": "开发 Claude Code 插件的全套工具：hooks、MCP、命令、代理共 7 项专家技能",
+  "pr-review-toolkit": "PR 评审工具箱：注释、测试、错误处理、类型设计、代码简化各有专职代理",
+  "ralph-wiggum": "自循环迭代开发：让 Claude 反复做同一个任务、看到上次结果，直到完成",
+  "security-guidance": "安全审查：改代码时模式化告警、停止时做 LLM diff 评审、提交前代理拦截注入/XSS/SSRF 等风险"
+}

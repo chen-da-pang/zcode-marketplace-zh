@@ -1,0 +1,26 @@
+{
+  "claude-plugins-official": {
+    "upstream": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/main/.claude-plugin/marketplace.json",
+    "name": "claude-plugins-official",
+    "description": "Claude Code 官方插件目录（含中文描述与图标）— 上游 anthropics/claude-plugins-official，每日自动同步",
+    "relative_source_repo": "https://github.com/anthropics/claude-plugins-official",
+    "relative_source_ref": "main",
+    "source_transform": "relative-to-git-subdir"
+  },
+  "claude-code-plugins": {
+    "upstream": "https://raw.githubusercontent.com/anthropics/claude-code/main/.claude-plugin/marketplace.json",
+    "name": "claude-code-plugins",
+    "description": "Claude Code 内置插件集（含中文描述与图标）— 上游 anthropics/claude-code，每日自动同步",
+    "relative_source_repo": "https://github.com/anthropics/claude-code",
+    "relative_source_ref": "main",
+    "source_transform": "relative-to-git-subdir"
+  },
+  "codex-official": {
+    "upstream": "https://raw.githubusercontent.com/openai/plugins/main/.agents/plugins/marketplace.json",
+    "name": "codex-official",
+    "description": "OpenAI Codex 官方插件市场（含中文描述与图标）— 上游 openai/plugins，插件实时从 main 拉取，目录每日自动同步",
+    "relative_source_repo": "https://github.com/openai/plugins",
+    "relative_source_ref": "main",
+    "source_transform": "codex-local-to-git-subdir"
+  }
+}

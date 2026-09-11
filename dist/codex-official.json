@@ -1,0 +1,1222 @@
+{
+  "name": "codex-official",
+  "description": "OpenAI Codex 官方插件市场（含中文描述与图标）— 上游 openai/plugins，插件实时从 main 拉取，目录每日自动同步",
+  "plugins": [
+    {
+      "name": "linear",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/linear",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "Linear 事项管理：搜索、创建、更新 issue 与项目，写 PRD、分析客户需求（需 ChatGPT 应用授权）"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/linear/icon.png"
+    },
+    {
+      "name": "atlassian-rovo",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/atlassian-rovo",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "快速管理 Jira 和 Confluence（需 ChatGPT 应用授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/atlassian-rovo/assets/app-icon.png"
+    },
+    {
+      "name": "google-calendar",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/google-calendar",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "接 Google 日历：排期、查空闲、每日简报、管理事件（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/google-calendar/assets/icon.png"
+    },
+    {
+      "name": "gmail",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/gmail",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Communication",
+      "description_i18n": {
+        "zh-CN": "通过 Gmail 连接器收发处理邮件（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/gmail/assets/gmail.png"
+    },
+    {
+      "name": "slack",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/slack",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Communication",
+      "description_i18n": {
+        "zh-CN": "通过 Slack 集成读写频道消息（需授权）"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/slack/icon.png"
+    },
+    {
+      "name": "teams",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/teams",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Communication",
+      "description_i18n": {
+        "zh-CN": "通过 Microsoft Teams 连接器协作（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/teams/assets/logo.png"
+    },
+    {
+      "name": "sharepoint",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/sharepoint",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "通过 SharePoint 连接器读写文档（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/sharepoint/assets/logo.png"
+    },
+    {
+      "name": "outlook-email",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/outlook-email",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Communication",
+      "description_i18n": {
+        "zh-CN": "通过 Outlook 连接器处理邮件（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/outlook-email/assets/logo.png"
+    },
+    {
+      "name": "outlook-calendar",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/outlook-calendar",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "接 Outlook 日历：排期、每日简报、会前准备与安全改期（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/outlook-calendar/assets/logo.png"
+    },
+    {
+      "name": "canva",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/canva",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "用对话创建、修改、审阅 Canva 设计；含社媒改尺寸、表格批量出图等技能（需授权）"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/canva/icon.png"
+    },
+    {
+      "name": "figma",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/figma",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "Figma 设计落地：读设计稿、生成 Code Connect 模板和设计系统规则"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/figma/icon.png"
+    },
+    {
+      "name": "stripe",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/stripe",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance",
+      "description_i18n": {
+        "zh-CN": "Stripe 支付集成开发：建产品/价格/支付链接，管理订阅、发票、退款、争议"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/stripe/icon.png"
+    },
+    {
+      "name": "vercel",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/vercel",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "构建并部署 Web 应用和智能体"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/vercel/icon.png"
+    },
+    {
+      "name": "game-studio",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/game-studio",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "浏览器游戏开发：2D/3D 工作流、素材管线、试玩测试支持"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/game-studio/assets/game-studio.svg"
+    },
+    {
+      "name": "superpowers",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/superpowers",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "工程方法论技能库：需求梳理、TDD、系统化调试、协作流程"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/superpowers/icon.png"
+    },
+    {
+      "name": "github",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/github",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "GitHub 连接器 + CLI 混合工作流：查仓库、处理 PR 与 issue、调 CI、发布变更"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/github/icon.png"
+    },
+    {
+      "name": "circleci",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/circleci",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "构建、测试、部署任意应用的 CI 流水线"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/circleci/assets/composer-icon.svg"
+    },
+    {
+      "name": "google-drive",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/google-drive",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "把 Google Drive / Docs / Sheets / Slides 当统一入口干活（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/google-drive/assets/logo.png"
+    },
+    {
+      "name": "notion",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/notion",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "Notion 工作流：方案规划、调研汇总、会议准备、知识沉淀"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/notion/icon.png"
+    },
+    {
+      "name": "cloudflare",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/cloudflare",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "Cloudflare 平台：Workers、Wrangler、Agents SDK 技能 + 官方 API MCP"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/cloudflare/icon.png"
+    },
+    {
+      "name": "sentry",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/sentry",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "查看 Sentry 近期报错与事件"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/sentry/icon.png"
+    },
+    {
+      "name": "build-ios-apps",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/build-ios-apps",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "iOS 开发：App Intents、SwiftUI、模拟器镜像、性能剖析、内存泄漏排查"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/build-ios-apps/assets/build-ios-apps-small.svg"
+    },
+    {
+      "name": "build-macos-apps",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/build-macos-apps",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "macOS 开发：Xcode、SwiftUI、AppKit 互操作、统一日志、桌面端调试全流程"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/build-macos-apps/assets/build-macos-apps-small.svg"
+    },
+    {
+      "name": "build-web-apps",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/build-web-apps",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "Web 开发：前端素材设计、浏览器测试、UI 组件、支付与数据库"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/build-web-apps/assets/build-web-apps-small.svg"
+    },
+    {
+      "name": "build-web-data-visualization",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/build-web-data-visualization",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "Web 数据可视化：图表、地图、仪表盘、甘特图、UML、滚动叙事、报告与导出"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/build-web-data-visualization/assets/data-visualization-small.svg"
+    },
+    {
+      "name": "test-android-apps",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/test-android-apps",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "Android 测试：模拟器复现问题、截图、UI 检查、抓日志、性能剖析"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/test-android-apps/assets/test-android-apps-small.svg"
+    },
+    {
+      "name": "life-science-research",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/life-science-research",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research",
+      "description_i18n": {
+        "zh-CN": "生命科学研究：证据汇总与检索路由，覆盖遗传、组学、结构、临床数据（可并行子代理）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/life-science-research/assets/app-icon.png"
+    },
+    {
+      "name": "zotero",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/zotero",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Education & Research",
+      "description_i18n": {
+        "zh-CN": "操作 Zotero 桌面版：检索文献库、导出 BibTeX、插入引用、导入参考文献"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/zotero/assets/icon.png"
+    },
+    {
+      "name": "expo",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/expo",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "Expo 官方技能：构建、部署、升级、调试 Expo / React Native 应用"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/expo/icon.png"
+    },
+    {
+      "name": "coderabbit",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/coderabbit",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "CodeRabbit 驱动的 AI 代码评审"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/coderabbit/icon.png"
+    },
+    {
+      "name": "remotion",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/remotion",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "Remotion 视频生成：用 React 写程序化视频，含动画、音频、字幕、3D"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/remotion/.codex-plugin/assets/composer-icon.svg"
+    },
+    {
+      "name": "plugin-eval",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/plugin-eval",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "插件评测用的多技能示例插件（测试夹具）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/plugin-eval/assets/plugin-eval.svg"
+    },
+    {
+      "name": "granola",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/granola",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "Granola MCP：把会议历史接进来，让助手引用过往对话的真实上下文"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/granola/assets/composer-icon.png"
+    },
+    {
+      "name": "monday-com",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/monday-com",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "monday.com 连接器：搜看板、建改条目与列、指派负责人、发更新（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/monday-com/assets/composer-icon.png"
+    },
+    {
+      "name": "temporal",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/temporal",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "Temporal 全生命周期：写应用、用 CLI、跑与管理服务端、接 Temporal Cloud"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/temporal/.codex-plugin/assets/composer-icon.svg"
+    },
+    {
+      "name": "hyperframes",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/hyperframes",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "HyperFrames：写 HTML 出视频，合成、GSAP 动画、字幕、配音、网站转视频"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/hyperframes/icon.png"
+    },
+    {
+      "name": "supabase",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/supabase",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "管 Supabase 项目：跑 SQL、改表结构、部署 Edge Function、配鉴权、看实时日志"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/supabase/icon.png"
+    },
+    {
+      "name": "codex-security",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/codex-security",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Security",
+      "description_i18n": {
+        "zh-CN": "安全扫描、分析与事件调查工作流"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/codex-security/assets/logo.png"
+    },
+    {
+      "name": "twilio-developer-kit",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/twilio-developer-kit",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "Twilio 技能：该用哪个 API、什么顺序、要避开什么（消息/语音/验证/SendGrid）"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/twilio-developer-kit/icon.png"
+    },
+    {
+      "name": "openai-developers",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/openai-developers",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL",
+        "products": [
+          "CODEX"
+        ]
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "用 OpenAI API、Agents SDK、ChatGPT Apps 开发，并可创建管理 API Key"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/openai-developers/assets/logo.png"
+    },
+    {
+      "name": "datadog",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/datadog",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "（仅 US1 客户）用自然语言分析 Datadog 遥测数据、定位并修复线上问题"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/datadog/icon.png"
+    },
+    {
+      "name": "zoom",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/zoom",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Communication",
+      "description_i18n": {
+        "zh-CN": "Zoom 会议智能洞察"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/zoom/assets/composer-icon.svg"
+    },
+    {
+      "name": "mixpanel-headless",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/mixpanel-headless",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Data & Analytics",
+      "description_i18n": {
+        "zh-CN": "用 mixpanel_headless Python SDK 分析 Mixpanel 数据"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/mixpanel-headless/assets/app-icon.png"
+    },
+    {
+      "name": "airtable",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/airtable",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "把 Airtable 运营数据接进对话：提问、建改记录、分析数据"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/airtable/icon.png"
+    },
+    {
+      "name": "nvidia",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/nvidia",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "NVIDIA 生态技能：GPU 加速、CUDA、AI 代理、推理、机器人、Omniverse、仿真"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/nvidia/assets/nvidia.png"
+    },
+    {
+      "name": "posthog",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/posthog",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Data & Analytics",
+      "description_i18n": {
+        "zh-CN": "PostHog：产品分析、功能开关、实验、错误追踪、问卷、LLM 分析"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/posthog/icon.png"
+    },
+    {
+      "name": "ngs-analysis",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/ngs-analysis",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research",
+      "description_i18n": {
+        "zh-CN": "基因测序分析：BCL/FASTQ、DNA 变异、RNA-seq、单细胞、表观、扩增子、宏基因组"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/ngs-analysis/assets/app-icon.png"
+    },
+    {
+      "name": "shopify",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/shopify",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Business & Operations",
+      "description_i18n": {
+        "zh-CN": "Shopify 开店：连现有店铺或新建，加商品、跨店调库存、建优惠码、看订单（需授权）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/shopify/assets/composer-icon.svg"
+    },
+    {
+      "name": "magicpath",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/magicpath",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "用 MagicPath 查找、检视、安装、创建和编辑 UI 组件"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/magicpath/assets/magicpath.png"
+    },
+    {
+      "name": "openai-ads-conversions",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/openai-ads-conversions",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "配置 OpenAI 广告监测 Pixel，可选接入 Conversions API"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/openai-ads-conversions/assets/icon.svg"
+    },
+    {
+      "name": "boltz-api-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/boltz-api-cli",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Scientific Research",
+      "description_i18n": {
+        "zh-CN": "预测蛋白结构、筛选分子与蛋白、设计结合体（Boltz）"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/boltz-api-cli/assets/app-icon.png"
+    },
+    {
+      "name": "dropbox",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/dropbox",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "Dropbox 接入：访问文件、把生成内容存回 Dropbox、创建分享链接（需授权）"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/dropbox/icon.png"
+    },
+    {
+      "name": "product-design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/product-design",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "产品设计：确认需求简报、探索产品方向、审查用户流程、把原型与截图做成可交互"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/product-design/assets/composerIcon.svg"
+    },
+    {
+      "name": "data-analytics",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/data-analytics",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Data & Analytics",
+      "description_i18n": {
+        "zh-CN": "用数据回答产品和业务问题"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/data-analytics/assets/datascience-small.svg"
+    },
+    {
+      "name": "creative-production",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/creative-production",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "创意生产：活动创意、概念图、情绪板、产品植入、广告方向、社媒与上市物料"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/creative-production/assets/composerIcon.svg"
+    },
+    {
+      "name": "public-equity-investing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/public-equity-investing",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Finance",
+      "description_i18n": {
+        "zh-CN": "二级市场投资：财报分析、估值、模型更新、多空逻辑、催化剂、ETF 尽调、投资备忘录"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/public-equity-investing/assets/composerIcon.svg"
+    },
+    {
+      "name": "adobe",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/adobe",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "Adobe 连接器：Creative Cloud 与 Acrobat 的创作与办公能力，用对话改图改稿（需授权）"
+      }
+    },
+    {
+      "name": "lovable",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/lovable",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "description_i18n": {
+        "zh-CN": "构建应用和网站"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/lovable/icon.png"
+    },
+    {
+      "name": "clickup",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/clickup",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description_i18n": {
+        "zh-CN": "把 Codex 变成你的 ClickUp 指挥中心"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/clickup/assets/composer-icon.png"
+    },
+    {
+      "name": "consensus",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/consensus",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research",
+      "description_i18n": {
+        "zh-CN": "学术研究 MCP：检索 2.2 亿+ 同行评审论文，做文献综述、检索式与参考文献"
+      }
+    },
+    {
+      "name": "chatcut",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/chatcut",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "安装、打开并连接签名版 ChatCut 桌面应用"
+      },
+      "icon": "https://raw.githubusercontent.com/openai/plugins/main/plugins/chatcut/.codex-plugin/assets/composer-icon.png"
+    },
+    {
+      "name": "higgsfield",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/openai/plugins",
+        "path": "./plugins/higgsfield",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity",
+      "description_i18n": {
+        "zh-CN": "生成图片和视频：产品图转视频广告、照片重绘、静态图动起来，聚合主流图像视频模型"
+      }
+    },
+    {
+      "name": "crowdstrike-falcon-foundry",
+      "source": {
+        "source": "git",
+        "url": "https://github.com/CrowdStrike/foundry-skills.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "CrowdStrike Falcon Foundry"
+      },
+      "description_i18n": {
+        "zh-CN": "CrowdStrike Falcon Foundry：在 Falcon 平台上开发网络安全应用"
+      },
+      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/crowdstrike-falcon-foundry/icon.png"
+    },
+    {
+      "name": "crowdstrike-falcon-fusion",
+      "source": {
+        "source": "git",
+        "url": "https://github.com/CrowdStrike/fusion-skills.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "CrowdStrike Falcon Fusion"
+      },
+      "description_i18n": {
+        "zh-CN": "CrowdStrike Falcon Fusion：编写、部署、执行 Fusion 工作流"
+      }
+    },
+    {
+      "name": "qodo",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/qodo-ai/qodo-skills.git",
+        "path": "codex-packages/qodo"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools",
+      "interface": {
+        "displayName": "Qodo"
+      },
+      "description_i18n": {
+        "zh-CN": "Qodo 代码智能与评审工作流"
+      }
+    }
+  ]
+}
