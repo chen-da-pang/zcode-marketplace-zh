@@ -17,7 +17,6 @@
   - 按插件名查译文/图标，不会因为查表产生重复条目
   - 输出内容没变化时不重写文件（git 里就不会有噪声提交）
 """
-import concurrent.futures as cf
 import json
 import os
 import sys
@@ -48,17 +47,24 @@ def strip_dot_slash(p):
     return p
 
 
+def git_subdir(repo, ref, rel_path):
+    """所有 git-subdir 来源统一从这里构造。"""
+    return {
+        "source": "git-subdir",
+        "url": repo,
+        "path": "./" + strip_dot_slash(rel_path),
+        "ref": ref,
+    }
+
+
 def relative_to_git_subdir(entry, cfg):
     """字符串型相对路径 -> git-subdir 对象。"""
     src = entry.get("source")
     if not isinstance(src, str) or not src.startswith("./"):
         return entry
-    entry["source"] = {
-        "source": "git-subdir",
-        "url": cfg["relative_source_repo"],
-        "path": "./" + strip_dot_slash(src),
-        "ref": cfg.get("relative_source_ref", "main"),
-    }
+    entry["source"] = git_subdir(
+        cfg["relative_source_repo"], cfg.get("relative_source_ref", "main"), src
+    )
     return entry
 
 
@@ -67,21 +73,11 @@ def codex_local_to_git_subdir(entry, cfg):
     repo = cfg["relative_source_repo"]
     ref = cfg.get("relative_source_ref", "main")
     if isinstance(src, str) and src.startswith("./"):
-        entry["source"] = {
-            "source": "git-subdir",
-            "url": repo,
-            "path": "./" + strip_dot_slash(src),
-            "ref": ref,
-        }
+        entry["source"] = git_subdir(repo, ref, src)
     elif isinstance(src, dict):
         kind = src.get("source")
         if kind == "local":
-            entry["source"] = {
-                "source": "git-subdir",
-                "url": repo,
-                "path": "./" + strip_dot_slash(src.get("path", "")),
-                "ref": ref,
-            }
+            entry["source"] = git_subdir(repo, ref, src.get("path", ""))
         elif kind == "url":
             # 指向外部仓库根目录
             entry["source"] = {"source": "git", "url": src["url"], "ref": ref}
@@ -187,8 +183,13 @@ def main():
             print(f"{market}: 失败 {type(e).__name__}: {e}")
 
     if failed:
-        print(f"\n有 {len(failed)} 个市场构建失败：{failed}")
-        return 1
+        # 单个上游抖动不应拖垮整个日更：其他市场照常发布，
+        # 失败的市场沿用上一次的 dist（内容旧一点，但仍是中文）。
+        # 只有全军覆没才算失败，让 CI 把问题暴露出来。
+        if len(failed) == len(sources):
+            print(f"\n全部 {len(failed)} 个市场构建失败，中止发布。")
+            return 1
+        print(f"\n警告：{len(failed)} 个市场构建失败（{failed}），沿用旧 dist，其余照常发布。")
     return 0
 
 

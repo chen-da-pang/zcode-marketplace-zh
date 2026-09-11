@@ -36,7 +36,8 @@ https://cdn.jsdelivr.net/gh/chen-da-pang/zcode-marketplace-zh@main/dist/claude-p
 `{"source":"url","url":"<上面的 dist 地址>"}`。ID 不变，已安装的插件不受影响，
 刷新时拉到的就是中文镜像。
 
-本地仓库里的 `zh-catalog/switch-sources.py` 就是干这个的（幂等，可反复跑）。
+这个改写由本地的 `~/zcode-plugins/zh-catalog/switch-sources.py` 完成（幂等，可反复跑）。
+它不在本仓库里 —— 那是个人环境配置，不是镜像产物。
 改完需要**完全退出 ZCode（Cmd+Q）再重开**才生效 —— ZCode 会把市场列表缓存在内存里。
 
 | 市场 | 插件数 | 中文 | 图标 | 上游 |
