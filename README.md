@@ -25,6 +25,20 @@ GitHub 拉不动时的备用地址（jsDelivr CDN，国内更稳）：
 https://cdn.jsdelivr.net/gh/chen-da-pang/zcode-marketplace-zh@main/dist/claude-plugins-official.json
 ```
 
+## 注意：`claude-plugins-official` 删不掉
+
+`claude-plugins-official` 和 `zcode-plugins-official` 是 **ZCode 内置市场**，
+`zcode.cjs` 里写死在默认列表 `sPt` 里，`ensureDefaultPluginMarketplaces()` 发现缺了会自动补回来。
+所以在界面里移除它是徒手的。
+
+正确做法不是删，而是**改指向**：把内置那条的 `source` 从
+`{"source":"github","repo":"anthropics/claude-plugins-official"}` 改成
+`{"source":"url","url":"<上面的 dist 地址>"}`。ID 不变，已安装的插件不受影响，
+刷新时拉到的就是中文镜像。
+
+本地仓库里的 `zh-catalog/switch-sources.py` 就是干这个的（幂等，可反复跑）。
+改完需要**完全退出 ZCode（Cmd+Q）再重开**才生效 —— ZCode 会把市场列表缓存在内存里。
+
 | 市场 | 插件数 | 中文 | 图标 | 上游 |
 |---|---|---|---|---|
 | claude-plugins-official | 294 | 294 | 257 | anthropics/claude-plugins-official |
