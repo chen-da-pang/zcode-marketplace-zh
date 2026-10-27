@@ -234,26 +234,6 @@
       "description_i18n": {
         "zh-CN": "自循环迭代开发：让 Claude 反复做同一个任务、看到上次结果，直到完成"
       }
-    },
-    {
-      "name": "security-guidance",
-      "description": "Security reminder hook that warns about potential security issues when editing files, including command injection, XSS, and unsafe code patterns",
-      "version": "1.0.0",
-      "author": {
-        "name": "David Dworken",
-        "email": "dworken@anthropic.com"
-      },
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/anthropics/claude-code",
-        "path": "./plugins/security-guidance",
-        "ref": "main"
-      },
-      "category": "security",
-      "description_i18n": {
-        "zh-CN": "安全审查：改代码时模式化告警、停止时做 LLM diff 评审、提交前代理拦截注入/XSS/SSRF 等风险"
-      },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/security-guidance/icon.png"
     }
   ]
 }
