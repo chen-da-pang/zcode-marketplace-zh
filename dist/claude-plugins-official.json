@@ -195,7 +195,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/gemini-cli-extensions/alloydb.git",
-        "sha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b"
+        "sha": "f9b3280bdcfe8910451f00b2a40eb32685766cd1"
       },
       "homepage": "https://cloud.google.com/alloydb",
       "description_i18n": {
@@ -379,7 +379,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/astronomer/agents.git",
-        "sha": "486ee63d01f8126c52fbc92c36cd36ec31708dcd"
+        "sha": "35b9610bb2710c37ca11326c4cbf7818b6725fec"
       },
       "homepage": "https://github.com/astronomer/agents",
       "description_i18n": {
@@ -1519,7 +1519,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/crowdsecurity/crowdsec-skill.git",
-        "sha": "8802dbe68a0552fe55dc605b6278f57e57578526"
+        "sha": "9bca8a76de2cbf5e6b70a8b2cfeadeffe53512da"
       },
       "homepage": "https://www.crowdsec.net",
       "description_i18n": {
@@ -1636,7 +1636,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/astronomer/agents.git",
-        "sha": "486ee63d01f8126c52fbc92c36cd36ec31708dcd"
+        "sha": "35b9610bb2710c37ca11326c4cbf7818b6725fec"
       },
       "homepage": "https://github.com/astronomer/agents",
       "description_i18n": {
@@ -1664,7 +1664,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/astronomer/agents.git",
-        "sha": "486ee63d01f8126c52fbc92c36cd36ec31708dcd"
+        "sha": "35b9610bb2710c37ca11326c4cbf7818b6725fec"
       },
       "homepage": "https://github.com/astronomer/agents",
       "description_i18n": {
@@ -1899,7 +1899,7 @@
         "url": "https://github.com/dropbox/dropbox-ai-plugins.git",
         "path": "claude",
         "ref": "main",
-        "sha": "60cea151b269e9ab47266279d80839c471e0d8c6"
+        "sha": "078f0ca36df40f054829b58731a5f86a561d9668"
       },
       "homepage": "https://www.dropbox.com",
       "description_i18n": {
@@ -3034,7 +3034,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/lusha-oss/lusha-mcp-plugin.git",
-        "sha": "c3017a3d6831e444b781044337f0394e76b12d89"
+        "sha": "4bcf5c743d5799d7c02727dd991585208f7a47b1"
       },
       "homepage": "https://www.lusha.com",
       "description_i18n": {
@@ -3218,7 +3218,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/MicrosoftDocs/mcp.git",
-        "sha": "f8ffde185dfd232dbf5d187c22ce299eadc3d583"
+        "sha": "f0a9478a954c9b3a7c6525a5183466902ca60731"
       },
       "homepage": "https://github.com/microsoftdocs/mcp",
       "description_i18n": {
@@ -3987,7 +3987,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/prisma/claude-plugin.git",
-        "sha": "815dbc4a045a29e3b81510ba0e3ab806f1baaf0e"
+        "sha": "82edd74d81892bcccf7294cbbf76752d76391da5"
       },
       "homepage": "https://prisma.io",
       "description_i18n": {
@@ -5009,7 +5009,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/confluentinc/agent-skills.git",
-        "sha": "f3d95b7e6855b690b7670ecee033404e082ab169"
+        "sha": "204b36f10e9be41819557988e8f5291711fda986"
       },
       "homepage": "https://www.confluent.io",
       "description_i18n": {
@@ -5242,7 +5242,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/twilio/ai.git",
-        "sha": "8aba46fb65dc8d9a20f4b301a68352064b4159a5"
+        "sha": "803790a281f0ef11d2928ffb41bc8422237fb434"
       },
       "homepage": "https://www.twilio.com",
       "description_i18n": {
@@ -5405,7 +5405,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin.git",
-        "sha": "a6aa73ada02a9fb1f5415bec491f9942c519b297"
+        "sha": "0e27bde2b55c5d3f6948532f4296aaa3654d8f4b"
       },
       "homepage": "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
       "description_i18n": {
@@ -5628,7 +5628,7 @@
         "url": "https://github.com/zapier/zapier-mcp.git",
         "path": "plugins/zapier",
         "ref": "main",
-        "sha": "5360f152b96735712e5f925ad728732cb86888df"
+        "sha": "54a12277a12c60df51ec16cf4e4ef0b27b166649"
       },
       "homepage": "https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier",
       "description_i18n": {
@@ -5712,7 +5712,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/zscaler/zscaler-mcp-server.git",
-        "sha": "809f68d6c921e0829fb2e07e9b797e7e70cf720b"
+        "sha": "6340cd24087a5681bc9ca2ba1c477748fbcc7bcb"
       },
       "homepage": "https://github.com/zscaler/zscaler-mcp-server",
       "description_i18n": {
