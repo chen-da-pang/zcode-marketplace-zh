@@ -738,7 +738,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/blackrock/advisor-center-agent-skills.git",
-        "sha": "591c758960c18c26fe8342ddb8ad3ba4dcfac6fe"
+        "sha": "736344f85fd43d5038f35170abd034f8fd0e1684"
       },
       "homepage": "https://github.com/blackrock/advisor-center-agent-skills"
     },
@@ -1533,7 +1533,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/CrowdStrike/foundry-skills.git",
-        "sha": "61572f38592d47c747e2595182459781bf0bc679"
+        "sha": "90082f829c6c2c4192b1459a01488863a1e82d1e"
       },
       "homepage": "https://github.com/CrowdStrike/foundry-skills",
       "description_i18n": {
@@ -1551,7 +1551,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/CrowdStrike/fusion-skills.git",
-        "sha": "38527dc5afa970543859c31ca5dbf69352bfaa28"
+        "sha": "d4e2abf93b1f0900fcc67fe040e98d086fa1fb0c"
       },
       "homepage": "https://github.com/CrowdStrike/fusion-skills",
       "description_i18n": {
@@ -4094,7 +4094,7 @@
         "url": "https://github.com/qodo-ai/qodo-skills.git",
         "path": "packages/qodo",
         "ref": "main",
-        "sha": "b8c21854199c538b1c35c981c12a93bab4839ef2"
+        "sha": "588e413a73b466ec4fe9cec79a34051d13f06ab3"
       },
       "homepage": "https://github.com/qodo-ai/qodo-skills.git",
       "description_i18n": {
@@ -4520,8 +4520,8 @@
       "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/sap-cds-mcp/icon.png"
     },
     {
-      "name": "sap-fiori-mcp-server",
-      "description": "MCP server for SAP Fiori development tools for Claude Code. Build and modify SAP Fiori applications with AI assistance.",
+      "name": "sap-ux-fiori-tools",
+      "description": "MCP server and skills for SAP Fiori development. Build, modify, and test SAP Fiori Elements applications with AI assistance.",
       "author": {
         "name": "SAP SE",
         "email": "ospo@sap.com",
@@ -4531,15 +4531,11 @@
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/SAP/open-ux-tools.git",
-        "path": "packages/fiori-mcp-server",
+        "path": "plugins-coding-agents/fiori",
         "ref": "main",
-        "sha": "69e2c50833f10e6892d7c8f42b98b13133d8fdc3"
+        "sha": "08afc41ddb24c1be3142c4fe609971c7f3501ca1"
       },
-      "homepage": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
-      "description_i18n": {
-        "zh-CN": "SAP Fiori 开发 MCP：AI 辅助构建和修改 Fiori 应用"
-      },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/sap-fiori-mcp-server/icon.png"
+      "homepage": "https://github.com/SAP/open-ux-tools/tree/main/plugins-coding-agents/fiori"
     },
     {
       "name": "sap-hana-cli",
@@ -5210,6 +5206,22 @@
         "zh-CN": "Terraform MCP：与 Terraform 生态集成，做基础设施即代码的自动化"
       },
       "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/terraform/icon.png"
+    },
+    {
+      "name": "theme-examples",
+      "description": "An example plugin to read, copy and change: twenty animated backdrops behind the chat in the Claude desktop app, with frosted-glass panels, one per project or per session. Needs a version of Claude Desktop that draws a plugin's backdrop.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/claude-plugins-official",
+        "path": "./plugins/theme-examples",
+        "ref": "main"
+      },
+      "category": "design",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/theme-examples"
     },
     {
       "name": "togetherai-skills",
