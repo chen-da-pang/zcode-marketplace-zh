@@ -1379,7 +1379,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/coderabbitai/skills.git",
-        "sha": "3e8763d24d543b48615b82535d02288de3ddae40"
+        "sha": "45bd1ae2c471cd861b8b6903f7dcab7c57aa0e59"
       },
       "homepage": "https://github.com/coderabbitai/skills",
       "description_i18n": {
@@ -2064,7 +2064,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/figma/mcp-server-guide.git",
-        "sha": "f2789420e7e8b4e2465dfeb1e12e1fc6a31397e5"
+        "sha": "43a06ff1738935ad5c3d9b0437b5373aaf45cdc3"
       },
       "homepage": "https://github.com/figma/mcp-server-guide",
       "description_i18n": {
@@ -3929,7 +3929,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/postmanlabs/postman-plugin.git",
-        "sha": "1fdd3f1e2736c7cb83780a221cb9f83641215ab7"
+        "sha": "d1f1cb9d0fba1c7442469fa68e14846ec966daf0"
       },
       "homepage": "https://github.com/postmanlabs/postman-plugin",
       "description_i18n": {
