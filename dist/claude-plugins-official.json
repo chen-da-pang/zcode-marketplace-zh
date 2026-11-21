@@ -97,7 +97,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
-        "sha": "75e45f337568bf3e0f5d99bc1b41d8844492df19"
+        "sha": "e72df7749ff54736bc1a6b57acff0c7799c9bda7"
       },
       "homepage": "https://github.com/AikidoSec/aikido-claude-plugin",
       "description_i18n": {
@@ -4620,7 +4620,7 @@
     {
       "name": "security-guidance",
       "description": "Security review for Claude-generated code. Pattern-based warnings on edits, LLM-powered diff review on Stop, and an agentic commit reviewer that catches injection, XSS, SSRF, hardcoded secrets, and 25+ other vulnerability classes.",
-      "version": "2.0.20",
+      "version": "2.0.21",
       "author": {
         "name": "Anthropic",
         "email": "support@anthropic.com"
@@ -5208,7 +5208,7 @@
     },
     {
       "name": "theme-examples",
-      "description": "An example plugin to read, copy and change: twenty animated backdrops behind the chat in the Claude desktop app, with frosted-glass panels, one per project or per session. Needs a version of Claude Desktop that draws a plugin's backdrop.",
+      "description": "An example plugin to read, copy and change: thirty-eight animated backdrops behind the chat in the Claude desktop app, with frosted-glass panels, one per project or per session. Needs a version of Claude Desktop that draws a plugin's backdrop.",
       "author": {
         "name": "Anthropic",
         "email": "support@anthropic.com"
